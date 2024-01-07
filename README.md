@@ -1,7 +1,7 @@
 # autocomplete-dictionary
 
 ## Overview
-This is a project made for COMP20003 investigating the application of different data structures for creating a dictionary in C. dict1 represents a simple sorted array, dict2 is a linked list and dict3 uses a radix tree as the data structure. 
+This is a project made for COMP20003 investigating the application of different data structures for creating a dictionary in ```C```. ```dict1``` represents a simple sorted array, ```dict2``` is a linked list and ```dict3``` uses a radix tree to form the basis for an autocomplete look-up dictionary.
 
 ## How to run
 Clone the repository and run the following commands in terminal
