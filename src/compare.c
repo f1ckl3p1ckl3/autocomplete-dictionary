@@ -6,7 +6,6 @@
 // returns 0 equal, else returns 1 if NOT equal
 // note: bit_count int MUST ALREADY BE INITIALISED!!!
 int compare_by_bits(char letter1, char letter2, int *bit_count) {
-    int cock = *bit_count;
     for (int i = sizeof(char)*BITS_PER_BYTE - 1; i >= 0; i--) {
         int a = (letter1 & (1<<i))&&1;
         int b = (letter2 & (1<<i))&&1;
@@ -14,14 +13,12 @@ int compare_by_bits(char letter1, char letter2, int *bit_count) {
         if (a != b) {
             (*bit_count)++;
             printf("\n");
-            printf("bits added: %d\n", *bit_count-cock);
             printf("total bits: %d\n\n", *bit_count);
             return 1;
         }
         (*bit_count)++;
     }
     printf("\n");
-    printf("bits added: %d\n", *bit_count-cock);
     printf("total bits: %d\n\n", *bit_count);
     return 0;
 }
